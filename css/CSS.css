@@ -1,0 +1,47 @@
+body {
+    background-color: #d8c9d8;
+    color: #212B40;
+
+}
+
+main {
+    margin-left: 5rem;
+    margin-right: 5rem;
+}
+
+header {
+    width: 100%;
+    margin-bottom: 1rem;
+    background-color: #8E75FF;
+    font-size: 1.5rem;
+    height: 100%;
+}
+
+header * {
+    text-align: center;
+    padding: 0.5rem;
+    color: #212B40;
+    height: 100%;
+    display: inline-block;
+}
+
+header a:hover {
+    background-color: #6B76E8;
+}
+
+.headerText {
+    display: inline-block;
+}
+
+h1 {
+    font-size: 2rem;
+}
+
+.HomePage {
+    text-align: center;
+    margin: auto;
+}
+
+#ProfielFoto {
+    width: 30%;
+}
