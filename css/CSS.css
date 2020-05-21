@@ -1,7 +1,6 @@
 body {
     background-color: #d8c9d8;
     color: #212B40;
-
 }
 
 main {
@@ -44,4 +43,14 @@ h1 {
 
 #ProfielFoto {
     width: 30%;
+}
+
+.Projecten {
+    color: #101520;
+    font-size: 1.5rem;
+    margin-left: 2rem;
+}
+
+.Projecten a:hover {
+    color: #6B76E8;
 }

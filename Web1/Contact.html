@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Joe and the Llama's | Contact</title>
+    <link rel="stylesheet" type="text/css" href="CSS/reset.css">
+    <link rel="stylesheet" type="text/css" href="CSS/CSS.css">
+</head>
+<body>
+    <header id="Top">
+        <nav>
+            <ul>
+                <li><img src="Images/Logo.png" class="Logo" alt="Joe and the Llama's logo"/></li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="Band.html">Bandleden</a></li>
+                <li><a href="Fotos.html">Foto's</a></li>
+                <li><a href="Nummers.html">Nummers</a></li>
+                <li><a href="Contact.html" class="Active">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <h1>Contact</h1>
+
+    <main class="contactForm">
+        <form action="Contact.html" onsubmit="Submit()">
+            <label for="Naam" class="formulier">Naam</label>
+            <input type="text" id="Naam" placeholder="vb.: Jan Janssens" class="formulier">
+
+            <label for="Email" class="formulier">Email</label>
+            <input type="email" id="Email" placeholder="vb.: jan.janssens@gmail.com" class="formulier">
+
+            <label for="Onderwerp" class="formulier">Onderwerp</label>
+            <input type="text" id="Onderwerp" placeholder="vb.: Optreden" class="formulier">
+
+            <label for="Bericht" class="formulier">Bericht</label>
+            <textarea id="Bericht" required class="formulier"></textarea>
+
+            <button type="submit" class="formulier">Verzenden</button>
+        </form>
+    </main>
+
+    <footer><p>joeandthelamas@gmail.com</p> <a href="#Top"><img src="Images/Pijl_Omhoog.png" alt="Pijl omhoog"> Terug naar boven</a></footer>
+    <iframe class="Playlist_Onder" src="https://open.spotify.com/embed/user/kahdnkuash2qhya8qxfjy2whx/playlist/5h39jtBe4AUrNdPgQnJdas"></iframe>
+
+    <script type="text/javascript">
+        function Submit()
+        {
+            alert("Bericht is verzonden");
+        }
+    </script>
+</body>
+</html>

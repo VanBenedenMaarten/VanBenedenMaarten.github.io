@@ -1,0 +1,329 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #ccc;
+    font-size: 1rem;
+    font-family: Arial, sans-serif;
+    line-height: 1rem;
+}
+
+header ul {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: #333;
+    padding: 0.5rem;
+}
+
+ul {
+    list-style: none;
+}
+
+nav li {
+    padding: 0.5rem;
+}
+
+nav a {
+    text-decoration: none;
+    color: #ccc;
+    font-size: 1.5rem;
+    padding: 0.5rem;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+nav a:focus {
+    text-decoration: underline;
+}
+
+.Active {
+    background-color: #ccc;
+    color: #333;
+}
+
+header {
+    background-image: url("../Images/Groep.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    image-resolution: inherit;
+    min-height: 15rem;
+    background-position: center top;
+}
+
+nav {
+    width: 100%;
+}
+
+.Logo {
+    height: 3rem;
+}
+
+h1 {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    font-size: 3rem;
+    text-align: center;
+    color: #333;
+    font-family: Consolas, sans-serif;
+    line-height: 1em;
+}
+
+h2 {
+    font-weight: bold;
+    font-size: 1.3rem;
+    margin-bottom: 0.5rem;
+}
+
+main {
+    max-width: 100%;
+    grid-gap: 0.5rem;
+    margin: 1rem;
+}
+
+.Grid_Container {
+    display: block;
+}
+
+aside {
+    grid-row-start: 1;
+    width: 100%;
+    font-size: 1rem;
+    background-color: #636363;
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    border: solid #333 3px;
+}
+
+.Index_Img {
+    width: 100%;
+}
+
+.Fotos {
+    display: block;
+}
+
+.Fotos>img {
+    width: 100%;
+    border: #333 solid 0.2rem;
+    border-radius: 5%;
+    margin-bottom: 1rem;
+}
+
+section {
+    margin-bottom: 2rem;
+}
+
+.contactForm {
+    display: flex;
+    justify-content: center;
+}
+
+.formulier {
+    margin-left: 1rem;
+}
+
+form, .Bandlid {
+    border: solid black 0.2rem;
+    padding: 1em;
+    border-radius: 1rem;
+    background-color: #333;
+    color: #ccc;
+    width: 80%;
+}
+
+.Bandlid {
+    width: 90%;
+}
+
+form>* {
+    width: 85%;
+    display: block;
+}
+
+form>input[type=text], form>textarea, form>button, form>input[type=email] {
+    margin-bottom: 1rem;
+    background-color: #ccc;
+    border-radius: 1rem;
+    padding-left: 0.5rem;
+}
+
+form>button {
+    padding-left: 0;
+    width: 35%;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+}
+
+form>label {
+    margin-bottom: 0.3rem;
+}
+
+textarea {
+    width: 90%;
+    height: 10rem;
+}
+
+.Bandleden {
+    display: grid;
+}
+
+.Bandlid:last-child {
+    margin-bottom: 6rem;
+}
+
+.Bandlid>img {
+    width: 30%;
+    float: left;
+    margin-right: 1rem;
+    margin-bottom: 1rem;
+}
+
+.Nummers {
+    margin-left: 1rem;
+}
+
+.Nummers li {
+    color: #ccc;
+
+    background-color: #333;
+}
+
+.Nummers {
+    width: 90%;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    background-color: #333;
+    border-radius: 1rem;
+}
+
+.Nummers a, .Eigen_nummer {
+  color: #ccc;
+  padding: 0.5rem;
+  margin: 0.5rem;
+  display: block;
+}
+
+.Nummers a:hover {
+    background-color: #ccc;
+    color: #333;
+}
+
+.Playlist_Onder {
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #333;
+    height: 5rem;
+}
+
+.Playlist {
+    padding-top: 1.5rem;
+}
+
+footer {
+    bottom: 0;
+    padding-bottom: 2rem;
+    padding-top: 1rem;
+    margin-top: 1rem;
+    width: 100%;
+    background-color: #333333;
+}
+
+footer p {
+    margin-left: 1rem;
+    color: #ccc;
+    display: inline;
+}
+
+footer a {
+    display: inline;
+    color: #ccc;
+    margin-right: 1rem;
+    float: right;
+}
+footer img {
+    height: 1rem;
+}
+
+@media all and (min-width: 700px){
+    nav {
+        top: 0;
+        position: fixed;
+        width: 100%;
+    }
+
+    main {
+        margin: 3rem;
+        min-width: 75%;
+    }
+
+    .Grid_Container {
+        display: grid;
+        grid-template-columns: 25% 70%;
+        grid-gap: 4rem;
+    }
+
+    form {
+        width: 60%;
+    }
+
+    form>* {
+        width: 70%;
+    }
+
+    .Fotos {
+        display: grid;
+        grid-gap: 1rem;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .Bandlid {
+        width: 80%;
+    }
+
+    .Bandlid>img {
+        width: 20%;
+        margin-right: 2rem;
+        margin-bottom: 2rem;
+    }
+
+    .Nummers_Grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+    }
+
+    .Nummers li {
+        width: 90%;
+        margin: 0 auto;
+        display: block;
+    }
+
+    .Nummers a {
+      width: 100%;
+      display: block;
+    }
+
+    .Playlist_Onder {
+        position: fixed;
+        bottom: 0;
+    }
+
+    .Playlist {
+      width: 70%;
+      height: 70%;
+      margin: 0 auto;
+      display: block;
+    }
+
+    footer {
+        padding-bottom: 6rem;
+    }
+}
